@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcceptingActivity">
+
+    <!-- News Content Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/newsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonLayout">
+
+        <!-- News Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- News Title -->
+            <TextView
+                android:id="@+id/tvNewsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- News Category -->
+            <TextView
+                android:id="@+id/tvNewsCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- News Article -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvNewsArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="News Article"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"/>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Button Container -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:spacing="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Accept Button -->
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:padding="12dp"/>
+
+        <!-- Reject Button -->
+        <Button
+            android:id="@+id/rejectButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Reject"
+            android:textAllCaps="false"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

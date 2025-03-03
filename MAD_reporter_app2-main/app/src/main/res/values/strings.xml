@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NewsReaderapp</string>
+    <string name="app_name">FlashPoint</string>
     <string name="app_slogan">Where Truth Meets Speed</string>
     <!-- Text -->
     <string name="login">Login</string>

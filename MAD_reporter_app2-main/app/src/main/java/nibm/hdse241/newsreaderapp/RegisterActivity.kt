@@ -75,7 +75,7 @@ class RegisterActivity : AppCompatActivity() {
                     val userDetails = hashMapOf(
                         "name" to name,
                         "email" to email,
-                        "userType" to "admin"  // Default user type is 'reporter'
+                        "userType" to "reporter"  // Default user type is 'reporter'
                     )
 
                     user?.uid?.let {

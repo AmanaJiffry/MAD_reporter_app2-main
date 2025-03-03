@@ -10,36 +10,48 @@
     <!-- Top Button Layout -->
     <LinearLayout
         android:id="@+id/buttonLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_width="409dp"
+        android:layout_height="57dp"
         android:layout_marginTop="28dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/btnAllNews"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="212dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            android:textStyle="bold"
+            android:layout_weight="2"
             android:padding="12dp"
             android:text="All news"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnAcceptedNews"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="210dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            android:textStyle="bold"
+            android:layout_weight="2"
             android:padding="12dp"
             android:text="Accepted news"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pendingButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="2"
+            android:text="Pending"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="12dp"/>
 
     </LinearLayout>
 

@@ -20,14 +20,14 @@
 
         <Button
             android:id="@+id/acceptedButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="4dp"
+            android:layout_weight="1"
             android:text="Accepted"
-            android:textStyle="bold"
             android:textSize="14sp"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/rejectedButton"
@@ -82,11 +82,29 @@
             android:layout_height="48dp"
             android:src="@android:drawable/ic_menu_edit"
             android:contentDescription="Edit"
-            android:background="?attr/selectableItemBackgroundBorderless" />
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"/>
 
         <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
+            android:layout_width="210dp"
+            android:layout_height="2dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/feedbackbutton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="View FeedBack"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_1"
+            />
+
+        <View
+            android:layout_width="210dp"
+            android:layout_height="2dp"
             android:layout_weight="1" />
 
         <ImageButton

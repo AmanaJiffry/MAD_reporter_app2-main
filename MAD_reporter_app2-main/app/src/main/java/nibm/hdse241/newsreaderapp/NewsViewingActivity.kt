@@ -12,6 +12,7 @@ import com.google.firebase.database.*
 
 class NewsViewingActivity : AppCompatActivity() {
 
+
     private lateinit var database: DatabaseReference
     private lateinit var newsRecyclerView: RecyclerView
     private lateinit var newsAdapter: NewsAdapter

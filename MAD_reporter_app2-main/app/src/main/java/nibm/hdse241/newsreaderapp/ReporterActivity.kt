@@ -5,13 +5,38 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
 
+
 class ReporterActivity : AppCompatActivity() {
+    class ReporterActivity : AppCompatActivity() {
+
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_reporter) // Replace with your current activity layout file
+
+            // Find the feedback icon (ImageView)
+            val feedbackButton = findViewById<ImageView>(R.id.feedbackbutton)
+
+            // Set a click listener for the feedback icon
+            feedbackButton.setOnClickListener {
+                // Create an Intent to navigate to the feedback activity
+                val intent = Intent(this, View_Feedback_Activity::class.java)
+
+                // Pass data to the feedback activity (optional)
+                intent.putExtra("NEWS_TITLE", "Sample News Title") // Replace with actual data
+                intent.putExtra("FEEDBACK_CONTENT", "The content needs more verification.") // Replace with actual data
+
+                // Start the feedback activity
+                startActivity(intent)
+            }
+        }
+    }
 
     private lateinit var database: DatabaseReference
     private lateinit var newsRecyclerView: RecyclerView

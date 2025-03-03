@@ -16,7 +16,8 @@
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonLayout">
+        app:layout_constraintBottom_toTopOf="@id/buttonLayout"
+        android:background="@drawable/bbb">
 
         <!-- News Content -->
         <LinearLayout
@@ -33,7 +34,8 @@
                 android:text="News Title"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/gray"/>
 
             <!-- News Category -->
             <TextView
@@ -82,7 +84,8 @@
             android:layout_marginEnd="8dp"
             android:text="Accept"
             android:textAllCaps="false"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:backgroundTint="@color/gray"/>
 
         <!-- Reject Button -->
         <Button
@@ -93,7 +96,8 @@
             android:layout_marginStart="8dp"
             android:text="Reject"
             android:textAllCaps="false"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:backgroundTint="@color/lightgray"/>
 
     </LinearLayout>
 

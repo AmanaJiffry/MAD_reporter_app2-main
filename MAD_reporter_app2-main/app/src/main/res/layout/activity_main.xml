@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bbb">
 
 
     <ImageView
@@ -25,13 +26,13 @@
         android:layout_height="52dp"
         android:layout_marginTop="52dp"
         android:text="@string/app_slogan"
-        android:textColor="@color/black"
         android:textSize="28dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logoImage" />
+        app:layout_constraintTop_toBottomOf="@id/logoImage"
+        android:textColor="@color/gray"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/loginButton"
@@ -48,7 +49,8 @@
         app:layout_constraintBottom_toTopOf="@id/registerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/gray"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/registerButton"
@@ -65,7 +67,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/lightgray"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

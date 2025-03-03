@@ -6,7 +6,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReporterActivity">
+    tools:context=".ReporterActivity"
+    android:background="@drawable/bbb">
 
     <!-- Filter Buttons Layout -->
     <LinearLayout
@@ -27,7 +28,8 @@
             android:layout_weight="1"
             android:text="Accepted"
             android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/gray"/>
 
         <Button
             android:id="@+id/rejectedButton"
@@ -38,6 +40,7 @@
             android:text="Rejected"
             android:textStyle="bold"
             android:textSize="14sp"
+            android:textColor="@color/gray"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
 
         <Button
@@ -49,6 +52,7 @@
             android:text="Pending"
             android:textStyle="bold"
             android:textSize="14sp"
+            android:textColor="@color/gray"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
     </LinearLayout>
 

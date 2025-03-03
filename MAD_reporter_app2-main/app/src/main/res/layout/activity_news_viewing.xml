@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewsViewingActivity">
+    tools:context=".NewsViewingActivity"
+    android:background="@drawable/bbb">
 
     <!-- Top Button Layout -->
     <LinearLayout
@@ -27,7 +28,8 @@
             android:padding="12dp"
             android:text="All news"
             android:textAllCaps="false"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/gray"/>
 
         <Button
             android:id="@+id/btnAcceptedNews"
@@ -39,7 +41,8 @@
             android:padding="12dp"
             android:text="Accepted news"
             android:textAllCaps="false"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/gray"/>
 
         <Button
             android:id="@+id/pendingButton"
@@ -51,7 +54,8 @@
             android:text="Pending"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:textColor="@color/gray"/>
 
     </LinearLayout>
 
@@ -82,7 +86,9 @@
             android:layout_width="match_parent"
             android:layout_height="564dp"
             android:clipToPadding="false"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:background="@drawable/bbb"
+            android:textColor="@color/gray"/>
 
     </FrameLayout>
 

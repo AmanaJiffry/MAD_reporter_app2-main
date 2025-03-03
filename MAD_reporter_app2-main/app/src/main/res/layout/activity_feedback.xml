@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FeedBackActivity">
+    tools:context=".FeedBackActivity"
+    android:background="@drawable/bbb">
 
     <!-- Headline Card -->
     <androidx.cardview.widget.CardView
@@ -91,6 +92,7 @@
         android:textAllCaps="false"
         android:padding="12dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/gray"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
